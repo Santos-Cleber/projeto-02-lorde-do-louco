@@ -1,0 +1,111 @@
+:root {
+    --cor-fundo-primario: #0A0A0F;
+    --cor-fundo-secundario: #1A1A2E;
+    --cor-texto-primario: #C8A96E;
+    --cor-texto-secundario: #8888AA;
+    --fonte-titulo: 'Playfair Display', Georgia, serif;
+    --fonte-corpo: 'DM Sans', system-ui, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo-primario);
+    font-family: var(--fonte-corpo);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cabecalho {
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 52px;
+    color: var(--cor-texto-primario);
+    letter-spacing: 2px;
+}
+
+.cabecalho__subtitulo {
+    font-size: 16px;
+    color: var(--cor-texto-secundario);
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 68vh;
+}
+
+.conteudo__imagem {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+    border: 2px solid var(--cor-texto-primario);
+    object-fit: cover;
+}
+
+.conteudo__poderes {
+    height: 100%;
+    width: 350px;
+    background-color: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-texto-primario);
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poderes__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    color: var(--cor-texto-primario);
+    margin-bottom: 20px;
+}
+
+.conteudo__poderes-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.poder {
+    font-size: 16px;
+    color: var(--cor-texto-secundario);
+    letter-spacing: 1px;
+}
+
+.frase__mistica {
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--cor-texto-primario);
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.8;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
